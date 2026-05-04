@@ -1,3 +1,5 @@
 # Overview
 
 Zebrafish cranial scRNA timepoints are individually analyzed using the core notebooks (assembly -> QC -> batch and normalization -> embedding and clustering) with added downstream analysis of marker identification and cluster annotation. Timepoint 150 dpf is further analyzed using GSEA followed by receptor-ligand analysis. Finally, all individual timepoints are combined and a new embedding and clustering is computed using the assembly, batch and normalization, and embedding and clustering notebooks. The results are further processed using the marker identification, cluster annotation, proportion analysis and receptor-ligand notebooks.
+
+The `analysis/` directory contains all notebooks in executed state to retrace the analysis. The `report.pptx` in each of the directories provides an overview including descriptions as a presentation. The notebooks may be run to fully re-create the analysis and all related files. Start with the `00-download.ipynb` notebook, which provides links and code to the data used within the analysis. See instructions in `analysis/` for further information.
